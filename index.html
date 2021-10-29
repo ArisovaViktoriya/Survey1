@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body class="bg-light py-3 py-lg-5">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg ">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index1.html">Результаты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      
+      <div class="text-center">
+      <h1 class="display-4">Опрос</h1>
+      <p class="text-mute text-center">описание опроса</p>
+      </div>
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+      <h4 class="m-0">Шаг 1</h4>
+      <h6 class="m-0">персональная информация</h6></button>
+      </li>
+      <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+      <h4 class="m-0">Шаг 2</h4>
+      <h6 class="m-0">опрос</h6></button>
+      </button>
+      </li>
+      <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+      <h4 class="m-0">Шаг 3</h4>
+      <h6 class="m-0">результаты опроса</h6></button>
+      </button>
+      </li>
+      </ul>
+      <div class="tab-content mt-3" id="myTab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row">
+            <div class="col-md-3 md-3">
+              <label class="col-12">Пол: </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Женский</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Мужской</label
+                >
+              </div>
+            </div>
+            <div class="col-md-3 md-3">
+              <label for="name">Возраст: </label>
+              <input type="number" class="form-control mt-2" id="age" required />
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+            <div class="col-md-6 md-6">
+              <label for="name">Телефон: </label>
+              <input type="text" class="form-control mt-2" id="phone" required />
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6 md-6">
+              <label for="name">Имя: </label>
+              <input type="text" class="form-control mt-2" placeholder="Введите имя" id="name"required/>
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+            <div class="col-md-6 md-6">
+              <label for="name">Email: </label>
+              <input type="text" class="form-control mt-2" placeholder="Введите почту" id="email"required/>
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-9 md-9">
+              <label for="name">Адрес: </label>
+              <input type="text" class="form-control mt-2" placeholder="Введите адрес" id="address" required/>
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+            <div class="col-md-3 md-3">
+              <label for="name">Номер квартиры или этаж: </label>
+              <input type="text" class="form-control mt-2" placeholder="12 кв." id="floor" required/>
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6 md-6">
+              <label for="name">Город: </label>
+              <input type="text" class="form-control mt-2" placeholder="Город" id="city" required/>
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+            <div class="col-md-2 md-2">
+              <label for="name">Zip: </label>
+              <input type="text" class="form-control mt-2" placeholder="123" id="zip" required/>
+              <div class="invalid-feedback">Заполните поле.</div>
+            </div>
+            <div class="col-md-4 md-4">
+              <label for="sel1">Страна: </label>
+              <select class="form-control mt-2" id="sel1">
+                <option>Россия</option>
+                <option>Корея</option>
+                <option>Америка</option>
+                <option>Украина</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary d-block ms-auto mt-3" id="go-to-step-2">Шаг 2</button>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <h2 class="h5 text-center mb-3">Вопрос 1: Как зовут этого персонажа из Cookie Run? </h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/Cherry.png" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Красивая картинка</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Lili</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Cherry</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Squid</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Latte</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Coco</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                  <p>Если не нашел подходящий ответ, то можешь написать свой в этом поле</p>
+                </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h2 class="h5 text-center mb-3">Вопрос 2: На какое животное похож этот персонаж?</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/Squid.png" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Красивая картинка</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Кошка</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Дельфин</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Рысь</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Кальмар</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Осьминог</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                  <p>Если не нашел подходящий ответ, то можешь написать свой в этом поле</p>
+                </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h2 class="h5 text-center mb-3">Вопрос 3: Какое животное есть у этой Cookie?</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/Truffle.png" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Красивая картинка</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Паук</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Змея</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Мышь</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Собака</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Нет</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                  <p>Если не нашел подходящий ответ, то можешь написать свой в этом поле</p>
+                </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h2 class="h5 text-center mb-3">Вопрос 4: На каком инструменте играет эта Cookie?</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/mint.png" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Красивая картинка</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Гитара</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Барабан</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Скрипка</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Фортепиано</label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">Треугольник</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                <label class="form-check-label" for="inlineRadio1">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                  <p>Если не нашел подходящий ответ, то можешь написать свой в этом поле</p>
+                </label>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="row">
+            <div class="col-lg-6">
+
+            <h2 class=" h5 text-left mb-3 mt-2" > Вопрос 5: </h2>
+            <p>На сколько баллов вы оцениваете игру Cookie Run?</p>
+            </div>
+            <div class="col-lg-6 mt-3">
+            <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+
+            </div>
+
+            <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea></div>
+              <hr class="my-4">
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+              <h2 class=" h5 text-left mb-3 mt-2" > Вопрос 6: </h2>
+              <p>Как часто вы в нее играете?</p>
+              </div>
+              <div class="col-lg-6 mt-3">
+              <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Все время</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Часто</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Редко</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Иногда</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Никогда</label>
+                  </div>
+  
+              </div>
+  
+              <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea></div>
+                <hr class="my-4">
+              </div>
+        
+            <div class="row">
+              <div class="col-lg-6">
+              <h2 class=" h5 text-left mb-3 mt-2" > Вопрос 7: </h2>
+              <p>Сколько новых персонажей вы открываете в день? </p>
+              </div>
+              <div class="col-lg-6 mt-3">
+              <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio7" autocomplete="off" checked>
+              <label class="btn btn-outline-secondary" for="btnradio7"> 1</label>
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio9" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio9"> 2 </label>
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio10" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio10"> 3</label>
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio11" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio11"> 4</label>
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio12" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio12"> 5</label>
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio13" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio13"> n/a</label>
+              </div>
+              
+              <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <hr class="my-4">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                <h2 class=" h5 text-left mb-3 mt-2" > Вопрос 8: </h2>
+                <p>На сколько вам нравится персонаж Truffle Cookie?</p>
+                </div>
+                <div class="col-lg-6 mt-3">
+                <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btncheck1">1</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btncheck2">2</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btncheck3">3</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btncheck3">4</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btncheck3">5</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btncheck3">n/a</label>
+                  </div>
+                
+                <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <hr class="my-4">
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 text-left mb-3 mt-2" > Вопрос 9: </h2>
+                  <p>На сколько вам нравится персонаж Cherry Cookie?</p>
+                  </div>
+
+                  <div class="col-lg-6 mt-3">
+                    <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+                      <label for="customRange1" class="form-label">1  </label>
+                      <input type="range" class="form-range" min="1" max="5" step="1" id="customRange1">
+                      <label for="customRange1" class="form-label">5  </label>
+                      </div>
+                      <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <hr class="my-4">
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 text-left mb-3 mt-2" > Вопрос 10: </h2>
+                  <p>На сколько вам нравится персонаж Squid Cookie?</p>
+                  </div>
+
+                  <div class="col-lg-6 mt-3">
+                    <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+                      <label for="customRange1" class="form-label">1  </label>
+                      <input type="range" class="form-range" min="1" max="5" step="1" id="customRange1">
+                      <label for="customRange1" class="form-label">5  </label>
+                      </div>
+                      <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                
+                <button class="btn btn-outline-secondary d-block ms-auto" type="button"id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Итоги</button>
+                  </div>
+                  </div>
+                    </div>
+                </div>
+                  <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1"> 
+                    <div class="container">
+                      <h2 class=" h5 text-center mb-3 mt-2" > Итоги экзамена: </h2>
+                      <div class="row">
+                        <div class="col-lg-6">
+                        <h2 class=" h5 mb-3 mt-2" > Итоги 1 Вопроса: </h2>
+                        <p>вариант 1</p>
+                        <p>вариант 2</p>
+                        <p>вариант 3</p>
+                        <p>вариант 4</p>
+                        <p>вариант 5</p>
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                          <div class="progress mt-4">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                          </div>
+                          <div class="progress mt-4">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                          </div>
+                          <div class="progress mt-4">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                          </div>
+                          <div class="progress mt-4">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                          </div>
+                          <div class="progress mt-4">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                          </div>
+                        </div>
+                        <hr class="my-4">
+                   </div>
+                   <div class="row">
+                    <div class="col-lg-6">
+                    <h2 class=" h5 mb-3 mt-2" > Итоги 2 Вопроса: </h2>
+                    <p>вариант 1</p>
+                    <p>вариант 2</p>
+                    <p>вариант 3</p>
+                    <p>вариант 4</p>
+                    <p>вариант 5</p>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                      <div class="progress mt-4">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">50%</div>
+                      </div>
+                      <div class="progress mt-4">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                      <div class="progress mt-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                      </div>
+                      <div class="progress mt-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                      </div>
+                      <div class="progress mt-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 3 Вопроса: </h2>
+                  <p>Варианы ответов</p>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress mt-4">
+                      <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1</div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">2</div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">3</div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">4</div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 4 Вопроса: </h2>
+                  <p>Варианы ответов</p>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress mt-4">
+                      <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1</div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">2</div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">3</div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">4</div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 5 Вопроса: </h2>
+                  <p>Варианы ответов</p>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">3/5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 6 Вопроса: </h2>
+                  <p>Варианы ответов</p>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">1/5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 7 Вопроса: </h2>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5/5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 8 Вопроса: </h2>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5/5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 9 Вопроса: </h2>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">2/5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                  <h2 class=" h5 mb-3 mt-2" > Итоги 10 Вопроса: </h2>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">4/5</div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </div>
+                </div>
+                </div>
+                
+                    <script src="js/bootstrap.bundle.min.js"></script>
+                  </body>
+                </html>
